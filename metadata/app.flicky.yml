@@ -162,9 +162,9 @@ Builds:
       - targetAbi=arm64-v8a
       - includeUniversalApk=false
 
-  - versionName: 3.2.3
-    versionCode: 407
-    commit: d8b75ccd4ca35fa8c20e7ab652a97dbcab5b2e99
+  - versionName: 3.2.4
+    versionCode: 417
+    commit: 2a5160b41d770d9cc4fd9261fe9f9bfb55defd7f
     subdir: app
     gradle:
       - yes
@@ -174,9 +174,9 @@ Builds:
       - targetAbi=x86
       - includeUniversalApk=false
 
-  - versionName: 3.2.3
-    versionCode: 408
-    commit: d8b75ccd4ca35fa8c20e7ab652a97dbcab5b2e99
+  - versionName: 3.2.4
+    versionCode: 418
+    commit: 2a5160b41d770d9cc4fd9261fe9f9bfb55defd7f
     subdir: app
     gradle:
       - yes
@@ -186,9 +186,9 @@ Builds:
       - targetAbi=x86_64
       - includeUniversalApk=false
 
-  - versionName: 3.2.3
-    versionCode: 409
-    commit: d8b75ccd4ca35fa8c20e7ab652a97dbcab5b2e99
+  - versionName: 3.2.4
+    versionCode: 419
+    commit: 2a5160b41d770d9cc4fd9261fe9f9bfb55defd7f
     subdir: app
     gradle:
       - yes
@@ -198,9 +198,9 @@ Builds:
       - targetAbi=armeabi-v7a
       - includeUniversalApk=false
 
-  - versionName: 3.2.3
-    versionCode: 410
-    commit: d8b75ccd4ca35fa8c20e7ab652a97dbcab5b2e99
+  - versionName: 3.2.4
+    versionCode: 420
+    commit: 2a5160b41d770d9cc4fd9261fe9f9bfb55defd7f
     subdir: app
     gradle:
       - yes
@@ -219,5 +219,5 @@ VercodeOperation:
   - '%c - 2'
   - '%c - 1'
   - '%c'
-CurrentVersion: 3.2.3
-CurrentVersionCode: 410
+CurrentVersion: 3.2.4
+CurrentVersionCode: 420
