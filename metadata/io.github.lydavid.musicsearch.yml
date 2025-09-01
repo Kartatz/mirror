@@ -1143,9 +1143,9 @@ Builds:
     scandelete:
       - build-logic/convention/build
 
-  - versionName: 1.60.2
-    versionCode: 715
-    commit: f0ec3a6f8b49e63320425128c28bfe4d959df3f8
+  - versionName: 1.61.0
+    versionCode: 716
+    commit: 4b9644faf03f0dbe1b5c204408b0b3a139a59353
     subdir: android/app
     sudo:
       - echo "deb http://deb.debian.org/debian trixie main" > /etc/apt/sources.list.d/trixie.list
@@ -1174,5 +1174,5 @@ AllowedAPKSigningKeys: c9b37762445dfcab7eabea79195d7f5c32501180f7c31403cf5cb427f
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
 UpdateCheckData: gradle.properties|VERSION_CODE=(\d+)|.|VERSION_NAME=(.*)
-CurrentVersion: 1.60.2
-CurrentVersionCode: 715
+CurrentVersion: 1.61.0
+CurrentVersionCode: 716
