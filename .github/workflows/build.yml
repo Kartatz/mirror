@@ -23,5 +23,5 @@ jobs:
     - name: Run
       run: |
         git clone --quiet --mirror 'https://www.bearssl.org/git/BearSSL' './repo'
-        git -C './repo' push --force --quiet --mirror origin
+        git -C './repo' push --force --quiet --mirror https://github.com/Kartatz/mirror
 
