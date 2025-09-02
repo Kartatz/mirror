@@ -22,6 +22,6 @@ jobs:
     - uses: actions/checkout@main
     - name: Run
       run: |
-        git clone --quiet --mirror 'https://www.bearssl.org/git/BearSSL'
-        git -C './BearSSL' push --force --quiet --mirror origin
+        git clone --quiet --mirror 'https://www.bearssl.org/git/BearSSL' './repo'
+        git -C './repo' push --force --quiet --mirror origin
 
