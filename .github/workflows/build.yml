@@ -22,7 +22,15 @@ jobs:
     - uses: actions/checkout@main
     - name: Run
       run: |
-        git clone --quiet --mirror 'https://www.bearssl.org/git/BearSSL' './repo'
-        git -C './repo' push --force --quiet --branches https://kartatz:${{ secrets.GITHUB_TOKEN }}@github.com/Kartatz/mirror
-        git -C './repo' push --force --quiet --tags https://kartatz:${{ secrets.GITHUB_TOKEN }}@github.com/Kartatz/mirror
+         function mirror() {
+            
+            local directory="$(mktemp --directory)"
+            
+            git clone --quiet --mirror "${1}" "${directory}"
+            
+            git -C "${directory}" push --force --quiet --branches https://github:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+            git -C "${directory}" push --force --quiet --tags https://github:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        
+        mirror https://www.bearssl.org/git/BearSSL
+
 
