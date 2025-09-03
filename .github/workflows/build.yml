@@ -30,6 +30,7 @@ jobs:
             
             git -C "${directory}" push --force --quiet --branches https://github:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
             git -C "${directory}" push --force --quiet --tags https://github:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        }
         
         mirror https://www.bearssl.org/git/BearSSL
 
