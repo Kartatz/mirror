@@ -22,16 +22,7 @@ jobs:
     - uses: actions/checkout@main
     - name: Run
       run: |
-         function mirror() {
-            
-            local directory="$(mktemp --directory)"
-            
-            git clone --quiet --mirror "${1}" "${directory}"
-            
-            git -C "${directory}" push --force --quiet --branches https://github:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-            git -C "${directory}" push --force --quiet --tags https://github:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-        }
-        
-        mirror https://www.bearssl.org/git/BearSSL
+        source utils.sh
+        mirror 'https://www.bearssl.org/git/BearSSL' '${{ github.repository }}' '${{ secrets.GITHUB_TOKEN }}'
 
 
