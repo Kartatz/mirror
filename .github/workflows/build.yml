@@ -22,7 +22,10 @@ jobs:
     - uses: actions/checkout@main
     - name: Run
       run: |
-        source utils.sh
-        mirror 'https://www.bearssl.org/git/BearSSL' '${{ github.repository }}' '${{ secrets.GITHUB_TOKEN }}'
-
+        source './utils.sh'
+        
+        mirror \
+            'https://www.bearssl.org/git/BearSSL' \
+            '${{ github.repository }}' \
+            '${{ secrets.GITHUB_TOKEN }}'
 
