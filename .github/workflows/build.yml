@@ -25,7 +25,7 @@ jobs:
         source './utils.sh'
         
         mirror \
-            'https://www.bearssl.org/git/BearSSL' \
+            'https://gitlab.com/fdroid/fdroiddata' \
             '${{ github.repository }}' \
             '${{ secrets.GITHUB_TOKEN }}'
 
