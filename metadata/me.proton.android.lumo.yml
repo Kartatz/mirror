@@ -26,9 +26,17 @@ Builds:
       - production
       - noGms
 
+  - versionName: 1.2.9-nogms
+    versionCode: 40
+    commit: 529268a2e22bbaff18f38494677d3743d47147dd
+    subdir: app
+    gradle:
+      - production
+      - noGms
+
 AllowedAPKSigningKeys: a5769b88d3c500f9c58c6939a7b09dc293630c8b93b69f4457888060bf1faa43
 
 AutoUpdateMode: Version +-nogms %v
 UpdateCheckMode: Tags
-CurrentVersion: 1.2.6
-CurrentVersionCode: 37
+CurrentVersion: 1.2.9
+CurrentVersionCode: 40
