@@ -79,6 +79,7 @@ Builds:
     subdir: app
     gradle:
       - yes
+    binary: https://github.com/w2sv/FileNavigator/releases/download/0.3.1-fdroid/0.3.1-fdroid-signed.apk
     scandelete:
       - build-logic/convention/build
 
