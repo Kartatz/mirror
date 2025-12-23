@@ -332,7 +332,16 @@ Builds:
       - sed -i -e '/agp/s/8.13.0/8.11.1/' ../gradle/libs.versions.toml
     ndk: r27c
 
+  - versionName: 6.1.0
+    versionCode: 1060
+    commit: df27eaf9ba0d4d64a379bc37d56475f276180f0b
+    subdir: app
+    gradle:
+      - prod
+    prebuild: sed -i -e '/proxy/d' -e 's/1536M/4G/' ../gradle.properties
+    ndk: r27c
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags ^v[\d.]+$
 CurrentVersion: 6.1.0
-CurrentVersionCode: 1059
+CurrentVersionCode: 1060
