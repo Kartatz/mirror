@@ -83,6 +83,7 @@ Builds:
     commit: 9e05e2cb1da05237a9e3d54199382b652f92269f
     gradle:
       - yes
+    prebuild: sed -i -e  '/JavaVersion/s/1_9/21/' build.gradle
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
