@@ -67,9 +67,15 @@ Builds:
     gradle:
       - offline
 
+  - versionName: 6.6.0
+    versionCode: 62
+    commit: 536e8e60262303b62e416d50a2992fc5f97f215f
+    gradle:
+      - offline
+
 AllowedAPKSigningKeys: a3fa2ab15d340794c0a0a230f7d0619c6ba35fb8d1e7dc541f5b9cef4769b6d8
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 6.4.1
-CurrentVersionCode: 53
+CurrentVersion: 6.6.0
+CurrentVersionCode: 62
