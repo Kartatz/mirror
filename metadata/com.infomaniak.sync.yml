@@ -221,7 +221,14 @@ Builds:
     gradle:
       - ose
 
+  - versionName: 4.5.4
+    versionCode: 405040005
+    commit: f4aa55d482f4d7a0ca6624221bcfb99bc2e95b58
+    subdir: app
+    gradle:
+      - ose
+
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
-CurrentVersion: 4.3.14
-CurrentVersionCode: 403140003
+CurrentVersion: 4.5.4
+CurrentVersionCode: 405040005
